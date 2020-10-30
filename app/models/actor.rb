@@ -17,8 +17,7 @@ class Actor < ActiveRecord::Base
         binding.pry
         character = self.characters map {|col_name| col_name.name}
         show = self.shows.map {|col_name| col_name.name}
-        binding.pry
-
+        b
 
     end
 
