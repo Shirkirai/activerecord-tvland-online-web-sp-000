@@ -5,7 +5,7 @@ class Show < ActiveRecord::Base
 
   def actors_list
     #binding.pry
-    self.actors map {|col_name| col_name.name}
+    self.actors.map {|col_name| col_name.name}
   end
 
 
