@@ -5,7 +5,7 @@ class Actor < ActiveRecord::Base
 
 
     def full_name
-        return self.first_name 
+        return self.first_name
     end
 
 end
