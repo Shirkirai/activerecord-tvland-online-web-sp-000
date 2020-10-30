@@ -14,6 +14,7 @@ class Actor < ActiveRecord::Base
     end
 
     def list_roles
+        binding.pry
         character = self.characters map {|col_name| col_name.name}
         show = self.shows.map {|col_name| col_name.name}
         binding.pry
