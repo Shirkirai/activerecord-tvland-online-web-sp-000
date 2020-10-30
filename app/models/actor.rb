@@ -14,6 +14,7 @@ class Actor < ActiveRecord::Base
     end
 
     def list_roles
+        character = self.characters map do {|col_name| col_name.name}
 
 
     end
