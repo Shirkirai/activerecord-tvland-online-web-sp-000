@@ -19,6 +19,7 @@ class Actor < ActiveRecord::Base
         show = self.shows.map {|col_name| col_name.name}
 
 
+
     end
 
 end
