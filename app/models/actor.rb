@@ -18,7 +18,7 @@ class Actor < ActiveRecord::Base
         character = self.characters.map {|col_name| col_name.name}
         show = self.shows.map {|col_name| col_name.name}
 
-        "#{character.first} - #{show}"
+        "#{character.first} - #{show.first}"
 
 
     end
