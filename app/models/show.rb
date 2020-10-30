@@ -3,7 +3,7 @@ class Show < ActiveRecord::Base
   belongs_to :shows
 
   def actors_list
-
+     binding.pry
   end
 
 
