@@ -10,7 +10,7 @@ class Actor < ActiveRecord::Base
 
         #return nospace_name.gsub(/(?<=[a-z])(?=[A-Z])/, ' ')
 
-        "self.#{first_name} self.#{last_name}"
+        "#{self.first_name} self.#{last_name}"
     end
 
 end
